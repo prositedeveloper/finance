@@ -1,0 +1,826 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: 'RoadRadio';
+    src: url('../fonts/roadradio_bold.otf');
+}
+
+:root {
+    --base-color: #2A3143;
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none; outline: none;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #fff;
+    font-size: 1.6rem;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 0 1.5rem;
+    max-width: 150rem;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.top {
+    flex-grow: 1;
+}
+
+.title {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 100%;
+    text-align: center;
+    color: var(--base-color);
+    margin-bottom: 2rem;
+}
+
+/* Header */
+.header {
+    padding: 2.45rem;
+    background-color: var(--base-color);
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-left, .header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo{
+    margin-right: 2.5rem;
+}
+
+.header-logo span {
+    font-family: 'RoadRadio';
+    font-weight: 700;
+    font-size: 1.4rem;
+    letter-spacing: .15rem;
+    text-transform: uppercase;
+    line-height: 1.2rem;
+    color: #fff;
+}
+
+.logo-top {
+    display: flex;
+    align-items: center;
+}
+
+.logo-top img {
+    margin-right: .8rem;
+}
+
+.logo-top span {
+    font-family: 'RoadRadio';
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    line-height: 100%;
+    color: #fff;
+}
+
+.border {
+    height: 2.5rem;
+    width: .1rem;
+    background-color: #FFFFFF1A;
+}
+
+.header-text p {
+    width: 28rem;
+    margin-left: 2.5rem;
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 100%;
+}
+
+.header-phone {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.header-phone img {
+    margin-right: 1.3rem;
+}
+
+.header-phone span {
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 100%;
+    color: #fff;
+}
+
+.telegram {
+    width: 2rem;
+    height: 1.7rem;
+    margin-right: 2rem;
+}
+
+.whatsapp {
+    margin-right: 4rem;
+}
+
+.header-button {
+    background-color: #03A678;
+    padding: 1.35rem 3rem;
+    border-radius: .5rem;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 100%;
+    cursor: pointer;
+}
+
+
+/* Intro */
+.intro {
+    background-color: #F8F8F8;
+    padding-top: 5.6rem;
+}
+
+.intro-inner {
+    display: flex;
+    align-items: center;
+}
+
+.intro-title {
+    color: var(--base-color);
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 100%;
+    margin-bottom: 2rem;
+}
+
+.intro-subtitle  {
+    font-size: 3rem;
+    line-height: 4rem;
+    color: var(--base-color);
+    font-weight: 400;
+    width: 90.6rem;
+    margin-bottom: 8rem;
+}
+
+.intro-text {
+    display: flex;
+}
+
+.intro-img {
+    width: 52rem;
+}
+
+.intro-text img {
+    width: 2.3rem;
+    height: 1.7rem;
+    margin-right: 1rem;
+}
+ 
+.intro-text p {
+    font-size: 2rem;
+    line-height: 3rem;
+    color: var(--base-color);
+    font-weight: 400;
+    width: 56rem;
+}
+
+
+/* Clients */
+.clients {
+    margin: 10rem 0;
+}
+
+.clients-subtitle {
+    font-size: 2rem;
+    line-height: 140%;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 4rem;
+    color: var(--base-color);
+}
+
+.client-title {
+    font-size: 3rem;
+    line-height: 100%;
+    font-weight: 700;
+    text-align: center;
+    color: var(--base-color);
+    margin-bottom: 2rem;
+}
+
+.clients-inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 31.2rem);
+    justify-content: center;
+    gap: 4rem;
+    margin-bottom: 4rem;
+}
+
+.client-item {
+    background-color: #F8F8F8;
+    padding: 3rem;
+    border-radius: .5rem;
+}
+
+.client-image {
+    margin-bottom: 4rem;
+}
+
+.client-item-title {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    line-height: 100%;
+    font-weight: 700;
+    color: var(--base-color);
+}
+
+.client-text {
+    font-size: 1.6rem;
+    line-height: 140%;
+    font-weight: 400;
+    color: var(--base-color);
+}
+
+.clients-banner {
+    background-color: #03A678;
+    padding: 4rem;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: space-between;
+    width: 132rem;
+    margin: 0 auto;
+}
+
+.clients-banner-title {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 100%;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.clients-banner-text {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 140%;
+    color: #fff;
+}
+
+
+
+/* Receiving */
+.background {
+    background-color: #F8F8F8;
+}
+
+.receiving {
+    padding-top: 10rem;
+}
+
+.receiving-inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 42rem);
+    justify-content: center;
+    gap: 2.4rem;
+}
+
+.receiving-title {
+    text-align: left;
+}
+
+.receiving-item {
+    padding: 4rem;
+    border-radius: .5rem;
+}
+
+.first {
+    background-color: #fff;
+}
+
+.second {
+    background-color: var(--base-color);
+}
+
+.third {
+    background-color: #03A678;
+}
+
+.receiving-list {
+    list-style: none;
+    list-style-image: url('../img/check.png');
+}
+
+.receiving-list li {
+    margin: 2rem 0;
+}
+
+.receiving-list li:last-child {
+    margin: 0;
+}
+
+.receiving-text {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 3.2rem;
+    color: #fff;
+    margin-top: 4rem;
+}
+
+
+/* Solutions */
+.solutions {
+    margin-top: 18rem;
+}
+
+.solutions-inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 42rem);
+    justify-content: center;
+    gap: 2.4rem;
+    margin-bottom: 4rem;
+}
+
+.four {
+    grid-column: 1 / 3;
+}
+
+.solution-item {
+    background-color: #fff;
+    padding: 4rem;
+    border-radius: .5rem;
+}
+
+.solution-item-title {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 100%;
+    color: var(--base-color);
+    margin-bottom: 2rem;
+}
+
+.solution-list {
+    list-style: none;
+    list-style-image: url('../img/check.png');
+}
+
+.solution-list li {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 140%;
+    color: var(--base-color);
+    padding: 1rem 0;
+}
+
+
+/* Reviews */
+.reviews {
+    margin-bottom: 10rem;
+}
+
+.reviews-inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 42rem);
+    justify-content: center;
+    gap: 2.4rem;
+    margin-bottom: 4rem;
+}
+
+.review-item {
+    padding: 3rem;
+    border-radius: 5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.review-text {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    color: var(--base-color);
+    margin-bottom: 4rem;
+    flex-grow: 1;
+}
+
+.review-author {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.6rem;
+    line-height: 100%;
+    color: var(--base-color);
+}
+
+.reviews-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 31.2rem);
+    justify-content: center;
+    gap: 2.4rem;
+}
+
+.reviews-buttons button {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 100%;
+    padding: 2.5rem 10.9rem;
+    border-radius: .5rem;
+    background-color: #03A678;
+    cursor: pointer;
+}
+
+
+/* Job */
+.background-green {
+    background-color: #03A678;
+}
+
+.job {
+    padding: 10rem 30rem;
+}
+
+.job-inner {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 13.3rem);
+    justify-content: center;
+    row-gap: 2.4rem;
+}
+
+.job-title {
+    color: #fff;
+}
+
+.job-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 3rem;
+    min-width: 70rem;
+}
+
+.job-number {
+    font-weight: 700;
+    font-size: 10rem;
+    line-height: 100%;
+    color: #03A678;
+    margin-right: 2rem;
+}
+
+.job-item-title {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 100%;
+    color: var(--base-color);
+}
+
+
+/* Footer */
+.footer {
+    background-color: var(--base-color);
+    padding: 0 15rem;
+}
+
+.footer-inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 23rem);
+    justify-content: center;
+    column-gap: 1rem;
+    padding-top: 5.5rem;
+}
+
+.footer-item-text {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 100%;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+.footer-list {
+    list-style: none;
+}
+
+.footer-list li {
+    color: #fff;
+    margin-bottom: 2.5rem;
+}
+
+.footer-phone, 
+.footer-email {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.footer-phone span, 
+.footer-email span {
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 100%;
+    color: #fff;
+    margin-left: 1.2rem;
+}
+
+.footer-copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.copyright-left span, 
+.copyright-right span {
+    font-size: 1.4rem;
+    line-height: 100%;
+    font-weight: 400;
+    opacity: 50%;
+    color: #fff;
+}
+
+.copyright-right span:first-child {
+    margin-right: 7rem;
+}
+
+/* Media */
+@media(max-width: 1500px) {
+    .intro-img {
+        width: 32rem;
+        height: auto;
+    }
+
+    .intro-title {
+        font-size: 4rem;
+    }
+
+    .clients-banner {
+        width: auto;
+    }
+}
+
+@media(max-width: 1200px) {
+    .header {
+        padding: 1.5rem;
+    }
+
+    .header-inner {
+        flex-direction: column;
+    }
+
+    .intro-inner {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .four {
+        grid-column: unset;
+    }
+
+    .intro-img {
+        margin-bottom: 4rem;
+    }
+
+    .intro-text p, .intro-subtitle {
+        width: auto;
+        margin: 0;
+    }
+
+    .job {
+        padding: 10rem 23rem;
+    }
+}
+
+@media(max-width: 1024px) {
+    .job {
+        padding: 10rem 18rem;
+    }
+
+    .job-number {
+        font-size: 7rem;
+    }
+
+    .footer {
+        padding: 0 12rem;
+    }
+
+    .footer-copyright {
+        flex-direction: column;
+    }
+
+    .copyright-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .copyright-left {
+        margin-bottom: 2rem;
+    }
+
+    .copyright-right span:first-child {
+        margin-right: 0;
+    }
+
+    .copyright-right span {
+        margin-bottom: 2rem;
+    }
+}
+
+@media(max-width: 768px) {
+    .job-inner {
+        row-gap: 1rem;
+    }
+
+    .job-item {
+        padding: 2rem;
+        min-width: 40rem;
+    }
+
+    .header-text p {
+        width: 23rem;
+        font-size: 1rem;
+        margin-left: 1rem;
+    }
+
+    .header-logo {
+        margin-right: 1rem;
+    }
+
+    .logo-top span {
+        font-size: 2rem;
+    }
+
+    .header-phone {
+        margin-right: 1.5rem;
+    }
+
+    .header-phone span {
+        font-size: 1.4rem;
+    }
+
+    .header-phone img {
+        margin-right: .75rem;
+    }
+
+    .telegram {
+        margin-right: 1.5rem;
+    }
+
+    .whatsapp {
+        margin-right: 2.5rem;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .clients-banner-title {
+        font-size: 2.5rem;
+    }
+
+    .clients {
+        margin: 4rem 0;
+    }
+
+    .receiving {
+        padding-top: 4rem;
+    }
+
+    .receiving-title {
+        margin-bottom: 3rem;
+    }
+
+    .solutions {
+        margin-top: 6rem;
+    }
+
+    .job {
+       padding: 7rem 10rem;
+    } 
+
+    .job-number {
+        font-size: 5rem;
+    }
+
+    .job-item-title {
+        font-size: 2rem;
+    }
+
+    .footer-social {
+        padding-bottom: 4rem;
+    }
+
+    .footer {
+        padding: 0 8rem;
+    }
+}
+
+@media(max-width: 480px) {
+    .header .container {
+        padding: 0;
+    }
+
+    .header-button {
+        font-size: 1.2rem;
+    }
+
+    .intro-title {
+        font-size: 3rem;
+    }
+
+    .intro-subtitle {
+        font-size: 1.5rem;
+        line-height: 2.4rem;
+    }
+
+    .intro-text p {
+        font-size: 1.3rem;
+        line-height: 1.9rem;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .clients-subtitle {
+        font-size: 1.6rem;
+    }
+
+    .client-title {
+        font-size: 2rem;
+    }
+
+    .client-item-title {
+        font-size: 1.8rem;
+    }
+
+    .client-text {
+        font-size: 1.4rem;
+    }
+
+    .clients-banner-title {
+        font-size: 1.8rem;
+    }
+
+    .clients-banner-text {
+        font-size: 1.4rem;
+    }
+
+    .header-text p {
+        width: 20rem;
+    }
+
+    .receiving-list li {
+        margin: 1rem 0;
+    }
+
+    .receiving-item {
+        padding: 2rem;
+    }
+
+    .receiving-title {
+        margin-bottom: 2rem;
+    }
+
+    .receiving-text {
+        font-size: 1.8rem;
+        margin-top: 2rem;
+    }
+
+    .solution-item-title {
+        font-size: 2rem;
+    }
+
+    .solution-list li {
+        font-size: 1.6rem;
+    }
+
+    .job {
+        padding: 4rem 5rem;
+    } 
+
+    .footer {
+        padding: 0 1.5rem;
+    }
+}
