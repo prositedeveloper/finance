@@ -44,7 +44,7 @@
                                 </a>
                             </div>
                             <div class="header-btn">
-                                <button class="header-button">Консультация</button>
+                                <button class="header-button" onclick="showPopup()">Консультация</button>
                             </div>
                         </div>
                     </div>
@@ -360,6 +360,19 @@
                     </section>
                 </div>
             </main> 
+
+            <div class="popup-overlay">
+                <div class="popup">
+                    <span class="close-popup" onclick="hidePopup()">&times;</span>
+                    <h2 class="popup-title">Получить персональное <br> предложение</h2>
+                    <form action="">
+                        <input type="text" placeholder="Имя">
+                        <input type="text" placeholder="Контакт">
+                        <input type="text" placeholder="Комментарии">
+                        <button>Получить персональное предложение</button>
+                    </form>
+                </div>
+            </div>
         </div><!-- ./top -->
         <footer class="footer">
             <div class="container">
@@ -435,5 +448,8 @@
             </div>
         </footer>
     </div><!-- ./wrapper -->
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
 </body>
 </html>

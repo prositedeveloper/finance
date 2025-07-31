@@ -153,6 +153,12 @@ body {
     font-size: 1.4rem;
     line-height: 100%;
     cursor: pointer;
+
+    transition: background-color .1s linear;
+}
+
+.header-button:hover {
+    background-color: #0a8b66;
 }
 
 
@@ -396,6 +402,7 @@ body {
 
 /* Reviews */
 .reviews {
+    padding: 10rem 0;
     margin-bottom: 10rem;
 }
 
@@ -449,8 +456,13 @@ body {
     border-radius: .5rem;
     background-color: #03A678;
     cursor: pointer;
+
+    transition: background-color .1s linear;
 }
 
+.reviews-buttons button:hover {
+    background-color: #0a8b66;
+}
 
 /* Job */
 .background-green {
@@ -495,6 +507,77 @@ body {
     color: var(--base-color);
 }
 
+/* Popup */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: 0 .2rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.close-popup {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+.popup-title {
+    color: #2A3143;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 100%;
+    margin-top: 2rem;
+}
+
+.popup form {
+    display: flex;
+    flex-direction: column;
+    width: 45rem;
+    margin-top: 4rem;
+}
+
+.popup form input {
+    color: #B2B4BA;
+    background-color: #F8F8F8;
+    padding: 2rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    line-height: 100%;
+}
+
+.popup form button {
+    margin-top: 4rem;
+    padding: 2rem 0;
+    background-color: #03A678;
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 100%;
+    font-weight: bold;  
+    border-radius: .5rem;  
+    cursor: pointer;
+
+    transition: background-color .1s linear;
+}
+
+.popup form button:hover {
+    background-color: #0a8b66;
+}
 
 /* Footer */
 .footer {
@@ -547,6 +630,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 2rem;
 }
 
 .copyright-left span, 
