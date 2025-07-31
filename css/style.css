@@ -818,6 +818,14 @@ body {
     .footer {
         padding: 0 8rem;
     }
+
+    .popup-title {
+        font-size: 2rem;
+    }
+
+    .popup form {
+        width: 38rem;
+    }
 }
 
 @media(max-width: 480px) {
